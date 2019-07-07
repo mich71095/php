@@ -1,2 +1,2 @@
 # php
-PHP review
+PHP review and exercises
