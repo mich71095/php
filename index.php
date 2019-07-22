@@ -1,3 +1,7 @@
+<?php 
+	require_once $_SERVER['DOCUMENT_ROOT']."/php/src/app/services/routing.php"; 
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -312,18 +316,18 @@
 
 
 				// The special ::class is useful for namespaced classes 
-				namespace foo {
-				    class bar {
-				    }
+				// namespace foo {
+				//     class bar {
+				//     }
 
-				    echo bar::class; // foo\bar
-				}
-				class foo {
-				    // As of PHP 5.6.0
-				    const TWO = ONE * 2;
-				    const THREE = ONE + self::TWO;
-				    const SENTENCE = 'The value of THREE is '.self::THREE;
-				}
+				//     echo bar::class; // foo\bar
+				// }
+				// class foo {
+				//     // As of PHP 5.6.0
+				//     const TWO = ONE * 2;
+				//     const THREE = ONE + self::TWO;
+				//     const SENTENCE = 'The value of THREE is '.self::THREE;
+				// }
 
 
 				// SELF vs THIS -> self is for the parent or base class, this is for current class
